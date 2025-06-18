@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca687a50b76c1564f967b92a2411af92, type: 3}
+  m_Name: CommonMoveInfo
+  m_EditorClassIdentifier: 
+  _locomotionData:
+    _startActionData:
+      _StandToCrouch: {fileID: 0}
+      _CrouchToStand: {fileID: 0}
+      _DodgeBack: {fileID: 0}
+      _DodgeRoll: {fileID: 0}
+      _CrouchMoveStart: {fileID: 0}
+    _stopActionData:
+      _MoveStop: {fileID: 0}
+      _RushStop: {fileID: 0}
+      _CrouchMoveStop: {fileID: 0}
+      _CrouchRunStop: {fileID: 0}
+      _Land: {fileID: 0}
+    _loopActionData:
+      _IdleTimeline: {fileID: 0}
+      MoveMixerTImeline: {fileID: 0}
+      _JumpTimeline: {fileID: 0}
+      _FallTimeline: {fileID: 0}
+      _CrouchMoveTimeline: {fileID: 0}
+      _CrouchIdleTimeline: {fileID: 0}
+      _CrouchRunTimeline: {fileID: 0}
+  _movementData:
+    moveData:
+      TargetSpeed: 0
+      SpeedSmoothTime: 0
+      RotateSmoothTime: 0
+      RotateSpeed: 0
+    rushData:
+      TargetSpeed: 0
+      SpeedSmoothTime: 0
+      RotateSmoothTime: 0
+      RotateSpeed: 0
+    Jump:
+      TargetSpeed: 0
+      SpeedSmoothTime: 0
+      RotateSmoothTime: 0
+      RotateSpeed: 0
+    Fall:
+      TargetSpeed: 0
+      SpeedSmoothTime: 0
+      RotateSmoothTime: 0
+      RotateSpeed: 0
+    RunJumpRootOffset: 0
+    QuickRunJumpRootOffset: 0
+    JumpHightRootOffset: 0
+    FallSpeedRootOffset: 0

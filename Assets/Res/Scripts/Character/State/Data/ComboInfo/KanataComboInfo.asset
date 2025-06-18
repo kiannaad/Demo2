@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4c461325d26e104c83ca7f8b1c4119a, type: 3}
+  m_Name: KanataComboInfo
+  m_EditorClassIdentifier: 
+  _ComboData:
+  - _name: 
+    _damage: 0
+    _Timeline: {fileID: 11400000, guid: f264957b8e182a940a96b394bf39e54e, type: 2}
+  - _name: 
+    _damage: 0
+    _Timeline: {fileID: 11400000, guid: ef8c6b3b6a8fcae4c8d4dee416b6df94, type: 2}
+  - _name: 
+    _damage: 0
+    _Timeline: {fileID: 11400000, guid: 5234d1c9c9fb85c4e910964ba3d80109, type: 2}
+  - _name: 
+    _damage: 0
+    _Timeline: {fileID: 11400000, guid: cc370432d4de7cb4a8aa99961860b1f0, type: 2}
+  _HeavyAttackData:
+    HeavyAttack_Charge: {fileID: 11400000, guid: c5556ab8c3d652f46b1d4aa6d4b5cc94,
+      type: 2}
+    HeavyAttack: {fileID: 11400000, guid: 59d5f6c179effca45b74d67616ba3242, type: 2}
+    HeavyAttack_End: {fileID: 11400000, guid: efd203a373ad15748a386bcadd115919, type: 2}
+    damage: 0
+    FirstChargeTimePoint: 0
+    SecondChargeTimePoint: 0
+    FirstDamageAdd: 0
+    SecondDamageAdd: 0
+  _skillData:
+    _skillType: 0
+    _ToDefenseTimeline: {fileID: 11400000, guid: b317762a6e62c944fb3008abde3ac2cd,
+      type: 2}
+    _ExitDefenseTimeline: {fileID: 11400000, guid: cb848c0f906158345ac3f6bd26459d96,
+      type: 2}
+    _DefenseWalkFTimeline: {fileID: 11400000, guid: 5a9606b0bc50d234fb7ffd4154780afe,
+      type: 2}
+    _DefenseAttackTimeline: {fileID: 11400000, guid: a921048699b12054a803f05c8dffbd77,
+      type: 2}
+    _DefenseIdleTimeline: {fileID: 11400000, guid: bea22985ab9118a4e98c4ee55bc2bd78,
+      type: 2}
+    _InstantTimeline: {fileID: 0}

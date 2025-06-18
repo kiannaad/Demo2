@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca687a50b76c1564f967b92a2411af92, type: 3}
+  m_Name: KanataMoveInfo
+  m_EditorClassIdentifier: 
+  _locomotionData:
+    _startActionData:
+      _StandToCrouch: {fileID: 11400000, guid: e889d46a18e1d2e4fa334af630598173, type: 2}
+      _CrouchToStand: {fileID: 11400000, guid: f26ead7bc24972c4f8917ee57857d092, type: 2}
+      _DodgeBack: {fileID: 11400000, guid: 5f4481d450c2bed479adcba9fe9e05e2, type: 2}
+      _DodgeRoll: {fileID: 11400000, guid: bb5f46ffb82f35e45a23bac7c218ea17, type: 2}
+      _CrouchMoveStart: {fileID: 11400000, guid: d17c5022274785d4ea88f57edc643d6a,
+        type: 2}
+      _AirAttackDownStart: {fileID: 11400000, guid: e171740ec0134614197d4f04842fa5b7,
+        type: 2}
+    _stopActionData:
+      _MoveStop: {fileID: 11400000, guid: deef65b70dfd42b45bc11eea46196572, type: 2}
+      _RushStop: {fileID: 11400000, guid: 98f7f0a72b63a0e45a46afcafc97b3a4, type: 2}
+      _CrouchMoveStop: {fileID: 11400000, guid: a792c9afac5149f4697e382d93a5fdf2,
+        type: 2}
+      _CrouchRunStop: {fileID: 0}
+      _Land: {fileID: 11400000, guid: e12bde8104ea76f4a9a5ae19402a34f5, type: 2}
+      _AirAttackDownLand: {fileID: 11400000, guid: f82b23e0ee514c34c9d978b1a3079ef3,
+        type: 2}
+    _loopActionData:
+      _IdleTimeline: {fileID: 11400000, guid: 84daa5630ee620e4d81baee374e2a85c, type: 2}
+      MoveMixerTimeline: {fileID: 11400000, guid: 523fa392f736e01458bbd8c5934ee1f9,
+        type: 2}
+      _JumpTimeline: {fileID: 11400000, guid: 88db8d271b966dd42a60ca2795c83151, type: 2}
+      _FallTimeline: {fileID: 11400000, guid: 332c1345d65bbb54780d2d6bddd19b0d, type: 2}
+      _CrouchMoveTimeline: {fileID: 11400000, guid: 938eb22756b154f47882e4df7b5e9490,
+        type: 2}
+      _CrouchIdleTimeline: {fileID: 11400000, guid: eef4a05bf9949f049b8fb76b4fdfa380,
+        type: 2}
+      _CrouchRunTimeline: {fileID: 0}
+      _AirAttackDownTimeline: {fileID: 11400000, guid: 5ee8adce31d80944a9ac73b2351a3e93,
+        type: 2}
+    _MoveSearchTimeline:
+    - {fileID: 11400000, guid: e7c366e06b944fb43a9862100c43e256, type: 2}
+    - {fileID: 11400000, guid: f27996c09af0a614c877c3067671b80f, type: 2}
+    - {fileID: 11400000, guid: 5a94e5036a317df429a80e3651637413, type: 2}
+    - {fileID: 11400000, guid: a218482052ae2a943b7a964816646fab, type: 2}
+    - {fileID: 11400000, guid: f509589de38c017438f68878e477fd01, type: 2}
+    - {fileID: 11400000, guid: 208a0e916d466fd4b9dbc5c33bcc4e88, type: 2}
+    - {fileID: 11400000, guid: 53bf3c0a7733bf24bbf4efba6987b521, type: 2}
+    - {fileID: 11400000, guid: 690ab877149a9784b953fed8de606e7d, type: 2}
+    _DodgeRollSearchTimeline:
+    - {fileID: 11400000, guid: 56f1fe22eebca6c42a7b07ac2e831690, type: 2}
+    - {fileID: 11400000, guid: 7a5cc7b4fb8fc47459dc2c5fea065122, type: 2}
+    - {fileID: 11400000, guid: 57666471043efe2408ce603df2b7b0fd, type: 2}
+    - {fileID: 11400000, guid: 0d3785b85223aa146a6225026a6d1465, type: 2}
+  _movementData:
+    moveData:
+      TargetSpeed: 1
+      SpeedSmoothTime: 0.2
+      RotateSmoothTime: 0.075
+      RotateSpeed: 5
+    rushData:
+      TargetSpeed: 1.5
+      SpeedSmoothTime: 0.22
+      RotateSmoothTime: 0.099
+      RotateSpeed: 5
+    RunJumpRootOffset: 0.1
+    QuickRunJumpRootOffset: 0.12
+    JumpHightRootOffset: 0
+    FallSpeedRootOffset: -0.23
