@@ -67,6 +67,7 @@
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\String\GetRandomString.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Animation\Play.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetLinearVelocity.cs" />
+    <Compile Include="Assets\Res\Scripts\Utility\AttributeLayer.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\SetPosition.cs" />
     <Compile Include="Assets\Res\Scripts\Character\State\CameraInternalMan.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetLinearDamping.cs" />
@@ -100,6 +101,7 @@
     <Compile Include="Assets\Behavior Designer\Runtime\Object Drawers\FloatSliderAttribute.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\UseGravity.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\SetStartLifetime.cs" />
+    <Compile Include="Assets\Res\Scripts\Utility\AttributeSystem.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\CompareSharedFloat.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Object Drawers\IntSliderAttribute.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Variables\SharedFloat.cs" />
@@ -132,6 +134,7 @@
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\GetDrag.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\GameObject\GetTag.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Variables\SharedMaterial.cs" />
+    <Compile Include="Assets\Res\Scripts\Enemy\Custom Task\Composite\WeightSelector.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\SphereCollider\SetCenter.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Animator\GetIntegerParameter.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\CharacterController\HasColliderHit.cs" />
@@ -183,6 +186,7 @@
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\AddExplosionForce.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Light\GetCookieSize.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetScheduledEndTime.cs" />
+    <Compile Include="Assets\Res\Scripts\Utility\PhysicsManager.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Vector2\GetVector3.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\AudioSource\IsPlaying.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Animator\GetGravityWeight.cs" />
@@ -249,6 +253,7 @@
     <Compile Include="Assets\Res\Scripts\Character\State\Data\Data\StopActionData.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Light\SetShadowStrength.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Transform\GetChild.cs" />
+    <Compile Include="Assets\Res\Scripts\Enemy\Custom Task\Conditional\JudgeDistanceInterval.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Transform\GetUpVector.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Light\GetShadowBias.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Input\GetAxisRaw.cs" />
@@ -262,6 +267,7 @@
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\SetMass.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Vector2\Multiply.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Rigidbody\Sleep.cs" />
+    <Compile Include="Assets\Res\Scripts\Enemy\Custom Task\Action\MoveToPlayer.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\GetRotation.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\SharedVariables\SetSharedColor.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Variables\SharedLayerMask.cs" />
@@ -326,6 +332,7 @@
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\SetDrag.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\BoxCollider\SetCenter.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Actions\SendEvent.cs" />
+    <Compile Include="Assets\Res\Scripts\Enemy\Custom Task\Conditional\JudgeDistance.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Input\IsMouseDown.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Rigidbody2D\GetPosition.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\CharacterController\GetSlopeLimit.cs" />
@@ -585,6 +592,7 @@
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Animator\SetIntegerParameter.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\AudioSource\SetMinDistance.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Debug\LogValue.cs" />
+    <Compile Include="Assets\Res\Scripts\Enemy\Custom Task\Conditional\InitTree.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Input\GetAcceleration.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Conditionals\RandomProbability.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\AudioSource\GetIgnoreListenerPause.cs" />
@@ -661,6 +669,7 @@
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Vector3\MoveTowards.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\Light\SetShadowBias.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\ParticleSystem\IsPlaying.cs" />
+    <Compile Include="Assets\Res\Scripts\Enemy\Enemy.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Unity\String\GetLength.cs" />
     <Compile Include="Assets\Behavior Designer\Runtime\Tasks\Conditionals\Reflection\CompareFieldValue.cs" />
   </ItemGroup>

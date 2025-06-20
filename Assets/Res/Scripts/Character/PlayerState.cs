@@ -18,7 +18,6 @@ using UnityEngine.InputSystem;
 public class PlayerState : EntityLogic
 {
     #region 组件
-
     public PlayableDirector playableDirector;
     public CinemachineVirtualCamera cam;
     public CharacterController _CharacterController;
@@ -70,6 +69,7 @@ public class PlayerState : EntityLogic
 
     public WeaponManager _weaponManager;
     public CameraInternalMan _cameraInternalMan;
+    public PhysicsManager _physicsManager;
 
     #region 输入模块设置
 
@@ -80,44 +80,28 @@ public class PlayerState : EntityLogic
 
     #region 根位移设置
 
-    public Vector3 _RootMotionOffset;
-
-    [SerializeField] private Vector2 _CurrentHorizontalRootOffset;
-
-    public Vector3 RootMotionOffset
-    {
-        get => _RootMotionOffset;
-        set
-        {
-            _RootMotionOffset = value;
-            if (value != Vector3.zero)
-                _CurrentHorizontalRootOffset = new Vector2(_RootMotionOffset.x, _RootMotionOffset.z);
-        }
-    }
     
     public void SetRootMotionOffsetZero()
     {
-        RootMotionOffset = Vector3.zero;
-        _CurrentHorizontalRootOffset = Vector2.zero;
+        _physicsManager.ExternalVelocity = Vector3.zero;
     }
     
     private void OnAnimatorMove()
     {
         if (!CanUseRootMotion) return;
 
-        var deltaPos = animator.deltaPosition;
-        var tarPos = deltaPos + RootMotionOffset;
-        _CharacterController.Move(tarPos);
+        _physicsManager.RootMotionVelocity = animator.velocity;
+
         transform.rotation *= animator.deltaRotation;
     }
     
     public void SetRootMotionOffset(string _StateName)
     {
-        RootMotionOffset = _StateName switch
+        _physicsManager.ExternalVelocity = _StateName switch
         {
             "RunJump" => movementData.RunJumpRootOffset * transform.forward + new Vector3(0f, movementData.JumpHightRootOffset, 0f),
             "QuickJump" => movementData.QuickRunJumpRootOffset * transform.forward + new Vector3(0f, movementData.JumpHightRootOffset, 0f),
-            "Fall" => new Vector3(_CurrentHorizontalRootOffset.x, movementData.FallSpeedRootOffset, _CurrentHorizontalRootOffset.y),
+            "Fall" => new Vector3(_physicsManager.CalculateVelocity().x, movementData.FallSpeedRootOffset, _physicsManager.CalculateVelocity().z),
             _ => Vector3.zero
         };
     }
@@ -137,6 +121,7 @@ public class PlayerState : EntityLogic
         _terrainDetection = GetComponent<TerrainDetection>();
         cam = CameraManager.Instance.GetPlayerCamera();
         _cameraInternalMan = new CameraInternalMan(cam, CameraManager.Instance.GetResearchCamera(), this);
+        _physicsManager = new PhysicsManager(_CharacterController, false);
     }
     
     private void Start()
@@ -160,6 +145,7 @@ public class PlayerState : EntityLogic
 
     private void Update()
     { 
+        //Debug.Log($"Velocity: {_physicsManager.CalculateVelocity()}");
         //Debug.Log($"HorizontalInput: {HorizontalInput}");
         //Debug.Log($"_lockTarget: {_lockTarget != null}");
         //Debug.Log($"Skill Button : {inputAction.Skill.ReadValue<float>()}");
