@@ -14,14 +14,14 @@ using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(PlayableDirector))]
 [RequireComponent(typeof(Animator))]
-[RequireComponent(typeof(TerrainDetection))]
+[RequireComponent(typeof(PhysicsDetection))]
 public class PlayerState : EntityLogic
 {
     #region 组件
     public PlayableDirector playableDirector;
     public CinemachineVirtualCamera cam;
     public CharacterController _CharacterController;
-    private TerrainDetection _terrainDetection;
+    private PhysicsDetection _terrainDetection;
 
     #endregion
     
@@ -118,7 +118,7 @@ public class PlayerState : EntityLogic
         animator = GetComponent<Animator>();
         layerManger.Init(animancer);
         _CharacterController = GetComponent<CharacterController>();
-        _terrainDetection = GetComponent<TerrainDetection>();
+        _terrainDetection = GetComponent<PhysicsDetection>();
         cam = CameraManager.Instance.GetPlayerCamera();
         _cameraInternalMan = new CameraInternalMan(cam, CameraManager.Instance.GetResearchCamera(), this);
         _physicsManager = new PhysicsManager(_CharacterController, false);

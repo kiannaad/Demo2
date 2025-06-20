@@ -10,7 +10,6 @@ using UnityEngine;
         CurHp,
         Attack,
         Defense,
-        MoveSpeed,
     }
     
     public enum DataModifyType
